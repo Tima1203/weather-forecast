@@ -1,0 +1,117 @@
+/* Сбрасываем отступы у body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Фон-картинка */
+.background {
+  position: fixed;   /* фиксируем на весь экран */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* растягиваем */
+  z-index: -1;       /* отправляем на задний план */
+  display: block;    /* убираем лишний inline-пробел */
+  pointer-events: none; /* чтобы фон не мешал кликам */
+}
+
+/* Контентный блок */
+.content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 12px;
+  color: #fff;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+/* Колонки */
+.column {
+  flex: 0 0 30%;
+  margin: 20px 10px;
+  min-width: 300px;
+}
+
+/* Списки */
+.gobl {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gobl li {
+  margin: 8px 0;
+  font-weight: 600;
+  font-size: 18px;
+}
+  
+
+/* Сброс отступов */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Фоновое изображение */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  display: block;
+  pointer-events: none;
+}
+
+/* Контейнер для выравнивания */
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Колонка с текстом и фоном */
+.column {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 30px 40px;
+  border-radius: 12px;
+  color: #fff;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Центрирование заголовков */
+.centered {
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Список погоды */
+.gobl {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+.gobl li {
+  margin: 8px 0;
+  font-weight: 600;
+  font-size: 18px;
+}
