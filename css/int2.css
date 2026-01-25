@@ -1,0 +1,50 @@
+/* Фон */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+a {
+  color: white;
+  text-decoration: none; /* убирает подчеркивание, если нужно */
+}
+
+/* Контентный блок */
+.content {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 1600px;
+  margin: 80px auto;
+  color: #fff;
+
+  display: flex;
+  flex-wrap: wrap;            /* переносим на новую строку */
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Колонки */
+.column {
+  flex: 0 0 30%;              /* каждая колонка занимает ~30% ширины */
+  margin: 20px 10px;          /* отступы между колонками */
+  min-width: 300px;           /* минимальная ширина */
+}
+
+/* Списки */
+.cities1, .brest1, .grodno1, .vitebsk1, .mogilev1, .gomel1 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cities1 li, .brest1 li, .grodno1 li, .vitebsk1 li, .mogilev1 li, .gomel1 li {
+  margin: 8px 0;
+  font-weight: 600;
+  font-size: 18px;
+}
