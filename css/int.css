@@ -1,0 +1,99 @@
+/* Видео фон */
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Общий стиль для всех ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Специальный стиль для ссылки Минск */
+.Minsk, .Grodno, .Gomel, .Vitebsk, .Mogilev, .Brest {
+  position: absolute;
+  font-weight: bold;
+  color: #1a73e8;
+  transition: color 0.3s ease;
+}
+
+/* Эффект при наведении */
+.Minsk:hover, .Grodno:hover, .Gomel:hover, .Vitebsk:hover, .Mogilev:hover, .Brest:hover {
+  color: #04e6ff;
+  text-decoration: underline;
+}
+
+/* Общие стили для текста */
+.Grodno, .Minsk, .Gomel, .Brest, .Mogilev, .Vitebsk {
+  position: absolute;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Десктоп */
+@media (min-width: 1024px) {
+  .Grodno {
+    bottom: 55%;
+    right: 64%;
+    font-size: 2vw;
+  }
+  .Minsk {
+    bottom: 58%;
+    right: 48%;
+    font-size: 2vw;
+  }
+  .Gomel {
+    bottom: 37%;
+    right: 36%;
+    font-size: 2vw
+  }
+  .Brest {
+    bottom: 36%;
+    right: 65%;
+    font-size: 2vw;
+  }
+  .Mogilev {
+    bottom: 55%;
+    right: 31%;
+    font-size: 2vw;
+  }
+  .Vitebsk {
+    bottom: 75%;
+    right: 40%;
+    font-size: 2vw;
+  }
+}
+
+/* Планшеты */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .Grodno {
+    bottom: 25%;
+    right: 35%;
+    font-size: 3vw;
+  }
+  .Minsk {
+    bottom: 25%;
+    right: 35%;
+    font-size: 3vw;
+  }
+}
+
+/* Мобильные телефоны */
+@media (max-width: 767px) {
+  .Grodno {
+    bottom: 20%;
+    right: 20%;
+    font-size: 5vw;
+  }
+  .Minsk {
+    bottom: 20%;
+    right: 20%;
+    font-size: 5vw;
+  }
+}
